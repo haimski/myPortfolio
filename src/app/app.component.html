@@ -1,0 +1,125 @@
+<div class="container main">
+  <div class="top row">
+    <div class="title card-title col-sm-4">
+      <h1>code creatives &reg;</h1>
+    </div>
+    <div id="pages" class="links col-sm-4">
+        <span class="btn btn-light"><i class="fas fa-folder"></i></span>
+        <span class="btn btn-light"><i class="fas fa-folder"></i></span>
+        <span class="btn btn-light"><i class="fas fa-folder"></i></span>
+        <span class="btn btn-light"><i class="fas fa-folder"></i></span>
+    </div>
+    <div class="page-title col-sm-4" data-bind="foreach: pages">
+      <h1>works</h1>
+    </div>
+  </div>
+  <!-- ngRepeat pages -->
+  <div id="pageContent" class="content row">
+    <div class="content-wrapper">
+      <!-- pages contents will come in here -->
+      <div>
+        <!-- works -->
+        <div class="worksWrapper flex row-flow">
+          <div class="workList col-sm-4">
+            <div class="btns-wrapper">
+              <div class="slider-arrows top-arr">
+                <i class="fas fa-caret-up"></i>
+              </div>
+              <div id="scrollable" class="btns">
+                <!-- ngRepeat content -->
+                <a href="" class="btn btn-light btn-md btn-block">work</a>
+                <a href="" class="btn btn-light btn-md btn-block">work</a>
+                <a href="" class="btn btn-light btn-md btn-block">work</a>
+                <a href="" class="btn btn-light btn-md btn-block">work</a>
+                <a href="" class="btn btn-light btn-md btn-block">work</a>
+                <a href="" class="btn btn-light btn-md btn-block">work</a>
+                <a href="" class="btn btn-light btn-md btn-block">work</a>
+                <a href="" class="btn btn-light btn-md btn-block">work</a>
+                <a href="" class="btn btn-light btn-md btn-block">work</a>
+                <a href="" class="btn btn-light btn-md btn-block">work</a>
+                <a href="" class="btn btn-light btn-md btn-block">work</a>
+                <a href="" class="btn btn-light btn-md btn-block">work</a>
+                <a href="" class="btn btn-light btn-md btn-block">work</a>
+                <a href="" class="btn btn-light btn-md btn-block">work</a>
+                <a href="" class="btn btn-light btn-md btn-block">work</a>
+                <a href="" class="btn btn-light btn-md btn-block">work</a>
+                <a href="" class="btn btn-light btn-md btn-block">work</a>
+                <a href="" class="btn btn-light btn-md btn-block">work</a>
+              </div>
+              <div class="slider-arrows bottom-arr">
+                <i class="fas fa-caret-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="workImg col-sm-4">
+            <!-- show image of selected work -->
+            <div class="imgWrap text-center" data-bind="foreach: $root.works">
+              <img src="http://dummyimage.com/208x208.png/ff4444/ffffff" alt="">
+            </div>
+            <div class="linkToProject text-center">
+              <!-- show the link to selected work -->
+              <a href="" class="badge badge-light">vestibulum sagittis sapien cum sociis</a>
+            </div>
+          </div>
+          <div class="workDesc col-sm-4" data-bind="foreach: $root.works">
+            <div class="workTitle" data-bind="visible: $root.selectedWork() === id(), text: $data.title"></div>
+            <div class="descText" data-bind="visible: $root.selectedWork() === id(), text: $data.description"></div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- learning -->
+    <!--<div class="learnWrapper row">
+<div class="learnBtns col-sm-4" data-bind="foreach: $root.learningVideos">
+  <div class=" btn btn-default btn-block learnBtn" data-bind="text: $data.name, click: $root.selectedLearningVideo.bind($parent, id())">button1</div>
+</div>
+<div class="learnContent col-sm-8">
+  <div class="video-wrapper">
+                <iframe data-bind="attr: { src: $root.learningVideos[$root.selectedLearningVideo()-1].url }" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+</div>-->
+    <!-- contact -->
+    <!--<div class="contactWrapper row">
+&lt;!&ndash; here comes a form &ndash;&gt;
+        <blockquote>
+            <p>Every Application Starts With One Click Of A Mouse</p>
+            <footer class="blockquote-footer"><cite>Code Creatives</cite></footer>
+        </blockquote>
+        <p class="attribute">Have A Question?</p>
+        <p class="attribute">Want to create a Digital Project?</p>
+        <p class="attribute">Need A Web or Mobile App?</p>
+        <p class="attribute">Always Consult the Pros!</p>
+<div class="formContainer col-sm-12">
+            <form action="" class="form-inline">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" class="form-control" id="fullName"/>
+                </div>
+                <hr>
+                <div class="form-group">
+                    <label for="email">eMail</label>
+                    <input type="text" class="form-control" id="email" />
+                </div>
+                <hr>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" class="form-control" id="phone" />
+                </div>
+                <hr>
+                <div class="form-group">
+                    <label for="comments">Comments</label>
+                    <textarea class="form-control" id="comments" rows="3" ></textarea>
+                </div>
+                <div class="form-group">
+                    <label></label>
+                    <button class="btn btn-danger" type="submit">send</button>
+                </div>
+            </form>
+        </div>
+</div>-->
+  </div>
+</div>
